@@ -14,13 +14,38 @@
     <h1 id ="title">Survey Form</h1>
     <p id = "description">This is a survey form for the next task. Follow the instrustions thorouhgly</p>
     <form id ="survey-form">
-      <label for="name">Name:</label>
-      <input id ="name" type ="text" name ="name" required>
-      <label for="email">E-Mail:</label>
-      <input id ="email" type ="email" name ="email" required>
-      <label for="number">Number:</label>
-      <input id ="number" type ="number" name ="number" required>
-
+      <label id="name-label" for="name">Name:</label>
+      <input id ="name" type ="text" name ="name" required placeholder="Name">
+      <br/><br/>
+      <label id="email-label" for="email">E-Mail:</label>
+      <input id ="email" type ="email" name ="email" required placeholder="E-mail">
+      <br/><br/>
+      <label id="number-label" for="number">Number:</label>
+      <input id ="number" type ="number" name ="number" required min="0" max="10" placeholder="Number">
+      <br/><br/>
+      <select id="dropdown" name="Rank">
+        <option value="Good">Good</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Bad">Bad</option>
+      </select>
+      <br/><br/>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+      <br/><br/>
+      <input type="checkbox" id="ckbest" name="best" value="Best">
+      <label for="ckbest">Best</label><br>
+      <input type="checkbox" id="ckmiddle" name="middle" value="Middle">
+      <label for="ckmiddle">Middle</label><br>
+      <input type="checkbox" id="ckworst" name="worst" value="Worst">
+      <label for="ckworst">Worst</label><br>
+      <br/><br/>
+      <textarea id="comments"></textarea>
+      <br/><br/>
+      <input id="submit" type="submit" value="Submit">
     </form>
   </body>
 </html>
